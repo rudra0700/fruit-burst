@@ -43,14 +43,15 @@
 <body class="eb-Garamond">
 	<header class="max-w-7xl mx-auto mb-10 p-4">
 		<!-- nav section -->
-		<div class="navbar bg-base-100">
+
+		<!-- <div class="navbar bg-[#F85559] rounded-full">
 			<div class="navbar-start">
 				<div class="dropdown">
-					<label tabindex="0" class="btn btn-ghost lg:hidden">
+					<label tabindex="0" class="btn btn-ghost btn-circle">
 						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
 							stroke="currentColor">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-								d="M4 6h16M4 12h8m-8 6h16" />
+								d="M4 6h16M4 12h16M4 18h7" />
 						</svg>
 					</label>
 					<ul tabindex="0"
@@ -61,22 +62,32 @@
 						<li><a>All Fruits</a></li>
 					</ul>
 				</div>
-				<a class="btn btn-ghost normal-case text-xl">daisyUI</a>
 			</div>
-			<div class="navbar-center hidden lg:flex">
-				<ul class="menu menu-horizontal px-1">
-					<li><a>Home</a></li>
-					<li><a>About Us</a></li>
-					<li><a>Shop</a></li>
-					<li><a>All Fruits</a></li>
-				</ul>
+			<div class="navbar-center">
+				<img src="./images/logo.png" alt="">
+				<a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
 			</div>
 			<div class="navbar-end">
-				<!-- <a class="btn">Button</a> -->
-				<input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+				<!-- <button class="btn btn-ghost btn-circle">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+						stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+					</svg> -->
+					<input type="text">
+				</button>
+				<button class="btn btn-ghost btn-circle">
+					<!-- <div class="indicator">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+							stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+						</svg>
+						<span class="badge badge-xs badge-primary indicator-item"></span>
+					</div> -->
+				</button>
 			</div>
-		</div>
-
+		</div> -->
 		<!-- banner section -->
 		<div class="carousel w-full rounded-lg">
 			<!-- slider 1 -->
@@ -387,30 +398,30 @@
 
 		</section>
 	</main>
-	<footer class="h-[50vh] bg-black text-white">
-		<div class="relative lg:top-14">
-		<div class="flex items-center justify-center gap-4">
-			<img src="./images/logo.png" alt="" class="w-10">
-			<h4 class="text-4xl font-bold">Fruit Burst</h4>
+	<footer class="w-full footer footer-center p-10 bg-[#121212] text-base-content rounded text-white">
+		<div class="flex">
+			<img src="./images/logo.png" alt="">
+			<h3 class=" text-2xl lg:text-4xl font-bold">Fruit Burst</h3>
 		</div>
-		<div class="flex flex-col lg:flex-row justify-center gap-7 text-lg font-semibold mt-7">
-			<a href="#">Home</a>
-			<a href="#">About Us</a>
-			<a href="#">Shop</a>
-			<a href="#">All Fruits</a>
-			<a href="#">Support</a>
-			<a href="#">My Account</a>
-		</div>
-		<div class="flex justify-center gap-7 mt-7 text-2xl">
-			<i class="fa-brands fa-linkedin"></i>
-			<i class="fa-brands fa-facebook"></i>
-			<i class="fa-brands fa-twitter"></i>
-			<i class="fa-brands fa-youtube"></i>
-			<i class="fa-brands fa-instagram"></i>
-			<i class="fa-brands fa-apple"></i>
-		</div>
-	</div>
-	</footer>
+		<div class="flex flex-col lg:flex-row gap-4 font-semibold text-lg">
+		  <a class="link link-hover">Home</a> 
+		  <a class="link link-hover">About Us</a> 
+		  <a class="link link-hover">Shop</a> 
+		  <a class="link link-hover">All Fruits</a>
+		  <a class="link link-hover">Support</a>
+		  <a class="link link-hover">My Account</a>
+		</div> 
+		<div>
+		  <div class="grid grid-cols-3 lg:grid-cols-6 gap-7 text-2xl">
+			<a><i class="fab fa-facebook"></i></a>
+			<a><i class="fab fa-twitter"></i></a>
+			<a><i class="fab fa-youtube"></i></a>
+			<a><i class="fab fa-instagram"></i></a>
+			<a><i class="fab fa-linkedin"></i></a>
+			<a><i class="fab fa-apple"></i></a>
+		  </div>
+		</div> 
+	  </footer>
 </body>
 
 </html>
